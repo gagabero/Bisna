@@ -1,0 +1,200 @@
+<a href="index.html">
+    <img src="/Assets/Image/logo/bisna-only-logo.png" alt="Bisna" height="50" />
+  </a>
+
+  <!------- Navbar start ------->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="navbarLabel">სანავიგაციო მენიუ</h5>
+          <button type="button" class="btn-close"
+            data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">მთავარი</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ტურები</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ადგილები</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" data-bs-target="hover"
+                aria-expanded="false">
+                ტურისტული პროდუქტები <i class='bx bx-chevron-down'></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-solid fa-bed"></i>
+                    დაბინავება
+                  </a>
+                </li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-burger"></i> კვება</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-face-laugh"></i> გართობა</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-face-surprise"></i> ექსტრემი &
+                    რეკრეაცია</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-users"></i> გიდები</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-truck-field"></i> ტრანსპორტირება</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-car-side"></i> ავტოგაქირავება</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                data-bs-target="hover">
+                გალერეა <i class='bx bx-chevron-down'></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-image"></i> ფოტო გალერეა</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-film"></i> ვიდეო გალერეა</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                data-bs-target="hover">
+                ჩვენ შესახებ <i class='bx bx-chevron-down'></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-circle-info"></i> ბისნას შესახებ</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-circle-info"></i> საქართველოს
+                    შესახებ</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-circle-info"></i> როგორ დავჯავშნოთ
+                    ტური</a></li>
+                <li><a class="dropdown-item" href="#"><i
+                      class="fa-solid fa-circle-info"></i> ხ.დ.შ</a></li>
+              </ul>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#">დაჯავშნე ტური</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#">კონტაქტი</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--===== Navbar end =====-->
+
+  <!-------- buttons set -------->
+  <div class="buttons-set d-flex">
+
+    <!-- Navbar toggle on responsive -->
+    <button type="button" class="btn btn-primary navbar-btn"
+      data-bs-toggle="offcanvas" data-bs-target="#navbar"
+      aria-controls="navbar">
+      <i class="ri-menu-4-line"></i>
+    </button>
+
+    <!-- search button -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas"
+      data-bs-target="#search" aria-controls="search">
+      <i class="bx bx-search"></i>
+    </button>
+
+    <!-- User login button -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas"
+      href="#authorization" role="button" aria-controls="authorization">
+      <i class="bx bx-user"></i>
+    </button>
+
+    <!-- Language change button -->
+    <button type="button" class="btn lang-btn">
+      <img src="/Assets/Image/lang/Geo.png" alt />
+    </button>
+  </div>
+
+  <!--======= Search menu offcanvas =======-->
+  <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="search"
+    aria-labelledby="searchLabel">
+    <div class="offcanvas-header">
+      <h6 class="offcanvas-title" id="searchLabel">მოძებნე ბისნაზე</h6>
+      <button type="button" class="btn-close btn"
+        data-bs-dismiss="offcanvas" aria-label="Close"><i
+          class="ri-close-line"></i></button>
+    </div>
+    <div class="offcanvas-body">
+      <form action method="get" class="search-form">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput"
+            placeholder="მოიძიე შენი თავგადასავალი">
+          <label for="floatingInput">მოიძიე ბისნას პროდუქტები</label>
+        </div>
+        <button type="submit" class="search-btn">
+          <i class="bx bx-search"></i>
+        </button>
+      </form>
+
+      <ul class="list-group">
+        <h6 class>ხშირად გამოყენებადი ფრაზები</h6>
+        <a class="list-group-item"><i class="ri-arrow-right-line"></i>
+          ჭორვილა</a>
+        <a class="list-group-item"><i class="ri-arrow-right-line"></i>
+          ცხვანდირის ტბები</a>
+        <a class="list-group-item"><i class="ri-arrow-right-line"></i> 2024
+          წლის დაგეგმილი ტურები</a>
+        <a class="list-group-item"><i class="ri-arrow-right-line"></i>
+          ხერთვისის ციხე</a>
+        <a class="list-group-item"><i class="ri-arrow-right-line"></i>
+          სურამი</a>
+      </ul>
+    </div>
+  </div>
+
+  <!--======= Login or register offcanvas =======-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="authorization"
+    aria-labelledby="authorizationLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="authorizationLabel">ბისნას ანგარიში</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+        aria-label="Close">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+    <div
+      class="offcanvas-body d-flex justify-content-center align-items-center">
+      <div
+        class="d-flex justify-content-center align-items-center auth-content">
+        <img src="/Assets/Image/logo/bisna-only-logo.png" height="80" alt>
+
+        <div class="text-center">
+          <h4 class="mt-4 mb-3">შედით ბისნას ანგარიშზე</h4>
+
+          <p>შედით უკვე არსებულ ბისნას ანგარიშში ან შექმენით ახალი. ბისნას
+            ანგარიშით, შეგიძლიათ დაამატოთ თქვენთვის სასურველი პროდუქტი და
+            დაიწყოთ საკუთარი ბიზნესის მართვა.</p>
+
+          <p>შეგიძლიათ შეხვიდეთ ან დარეგისტრირდეთ ბისნას ანგარიშზე თქვენი
+            ელექტრონული ფოსტის, Facebook ან Google ანგარიშის გამოყენებით.</p>
+        </div>
+
+        <div class="d-block mt-4 w-80">
+          <a type="button" class="btn btn-primary w-100">შედით ან
+            დარეგისტრირდით ბისნაზე</a>
+          <a type="button" class="btn btn-outline-primary mt-3 w-100">გაიგე
+            მეტი ბისნას ანგარიშის შესახებ</a>
+        </div>
+      </div>
+    </div>
+  </div>
