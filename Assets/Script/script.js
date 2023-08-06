@@ -103,17 +103,19 @@ paths.forEach((path) => {
   });
 });
 
-// Wait for all resources (including images) to be fully loaded
+
+/*-----------------------------------------------
+# Preloader
+-----------------------------------------------*/
 window.addEventListener("load", function () {
   const loadingIndicatorContainer = document.querySelector(
     ".loading-indicator"
   );
   const siteContent = document.querySelector(".site-content");
 
-  // Hide the loading indicator and show the content with a fade-in effect
   loadingIndicatorContainer.style.display = "none";
   siteContent.style.display = "block";
   setTimeout(() => {
     siteContent.classList.add("fade-in");
-  }, 10); // Use a small delay to ensure fade-in transition works properly
+  }, 10);
 });
